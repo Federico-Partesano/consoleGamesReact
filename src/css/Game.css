@@ -1,0 +1,196 @@
+.canvas {
+  position: relative;
+  margin: 50px auto;
+  height: 600px;
+  width: 1200px;
+  border: 2px solid black;
+  background-color: black;
+}
+
+.canvasSnake {
+  position: relative;
+  margin: 50px auto;
+  height: 600px;
+  width: 600px;
+  border: 2px solid black;
+  background-color: black;
+}
+
+.canvasPacman {
+  position: relative;
+  margin: 50px auto;
+  height: 600px;
+  width: 600px;
+  border: 2px solid black;
+  background-color: black;
+}
+.yesSnake {
+  position: absolute;
+  right: 700px;
+  bottom: 200px;
+  font-size: 30px;
+  cursor: grab;
+  color: grey;
+}
+
+.yesPacman {
+  position: absolute;
+  right: 400px;
+  bottom: 100px;
+  font-size: 30px;
+  cursor: grab;
+  color: grey;
+}
+.yesSnake:hover {
+  text-shadow: 1px 2px 3px white;
+  color: #097e80;
+}
+
+.noSnake {
+  position: absolute;
+  right: 500px;
+  bottom: 200px;
+  color: grey;
+  cursor: grab;
+  font-size: 30px;
+}
+
+.text-play-pacman {
+  position: absolute;
+  right: 170px;
+  bottom: 170px;
+  font-size: 35px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+.noPacman {
+  position: absolute;
+  right: 200px;
+  bottom: 100px;
+  color: grey;
+  cursor: grab;
+  font-size: 30px;
+}
+
+.noSnake:hover {
+  text-shadow: 1px 2px 3px white;
+  color: #097e80;
+}
+
+.noPacman:hover {
+  text-shadow: 1px 2px 3px #ee5135;
+  color: #fcbf5a;
+}
+.yesPacman:hover {
+  text-shadow: 1px 2px 3px #ee5135;
+  color: #fcbf5a;
+}
+
+.padel {
+  position: absolute;
+  width: 1.4%;
+  height: 5%;
+  background-color: white;
+}
+
+.ball {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.ball {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.food {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: green;
+}
+
+#arrow {
+  position: absolute;
+
+  transition: all 1s ease-out;
+  right: 715px;
+  bottom: 163px;
+}
+
+#yes:hover ~ #arrow {
+  right: 715px;
+  bottom: 163px;
+}
+
+#no {
+  position: absolute;
+  opacity: 0;
+  right: 512px;
+  bottom: 169px;
+  cursor: grab;
+  padding: 10px;
+}
+
+#no:hover ~ #arrow {
+  right: 550px;
+  bottom: 160px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.cell {
+  background-image: initial;
+  transition: all 1s;
+}
+@media only screen and (max-width: 768px) {
+  .canvas {
+    width: 100%;
+    height: 73%;
+  }
+  .nabvar {
+    width: 100%;
+  }
+}
